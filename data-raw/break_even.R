@@ -1,28 +1,12 @@
 library(magrittr)
-devtools::load_all(devtools::as.package("."))
 
-N <- trunc(10 ** seq(2, 4, by = 0.01)) %>% setNames(nm = .)
-PROB <- list(uniform = function(n) rep(1, n),
-             linear = seq_len,
-             rev_linear = . %>% seq_len %>% rev)
+pkg <- devtools::as.package(".")
+devtools::load_all(pkg)
+source(file.path(pkg$path, "data-raw", "benchmark.R"))
 
-break_even <-
-  plyr::ldply(
-    PROB,
-    function(probf) {
-      plyr::ldply(
-      N,
-      function(n) {
-        prob <- probf(n)
-        microbenchmark::microbenchmark(
-          crank=sample.int.crank(n, n, prob),
-          rank=sample.int.rank(n, n, prob),
-          rej=sample.int.rej(n, n, prob),
-          R=sample.int(n, n, replace = FALSE, prob)
-        )
-      }) %>%
-      dplyr::mutate(n = as.integer(.id), .id = NULL)
-  }) %>%
-  dplyr::rename(prob = .id)
+
+N <- trunc(10 ** seq(1, 4, by = 0.01)) %>% setNames(nm = .)
+
+break_even <- .benchmark()
 
 devtools::use_data(break_even, overwrite = TRUE, compress = "xz")
