@@ -1,16 +1,14 @@
 Encoding: UTF-8
-Package: wrswoR
+Package: wrswoR.benchmark
 Type: Package
-Title: Weighted random sampling without replacement
-Version: 0.0.8
+Title: Benchmark the wrswoR code
+Version: 0.0-1
 Authors@R: as.person("Kirill Müller <krlmlr+r@mailbox.org> [aut, cre]")
-Description: A collection of implementations of classical and
-    novel algorithms for weighted sampling without replacement.
+Description: Performance measurements for the "wrswoR" package.
 License: GPL-3
 Depends: R (>= 3.0.2)
-Imports: Rcpp, logging (>= 0.4-13)
-LinkingTo: Rcpp (>= 0.11.5)
-GitHub: https://github.com/krlmlr/wrswoR
+URL: https://github.com/krlmlr/wrswoR.benchmark
+BugReports: https://github.com/krlmlr/wrswoR.benchmark/issues
 Suggests: testthat,
     knitr, rmarkdown, ggplot2, dplyr, tidyr
 VignetteBuilder: knitr
