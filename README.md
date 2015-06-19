@@ -1,9 +1,8 @@
-wrswoR [![Build Status](https://travis-ci.org/krlmlr/wrswoR.png)](https://travis-ci.org/krlmlr/wrswoR)
+wrswoR.benchmark
 ======
 
-A package with different implementations of weighted random sampling without replacement in R.
+Benchmarks for [a package with different implementations of weighted random sampling without replacement](https://github.com/krlmlr/wrswoR).
 
 ```
-library(devtools)
-install_github('wrswoR', 'krlmlr')
+devtools::install_github(c('krlmlr/wrswoR', 'krlmlr/wrswoR.benchmark'))
 ```
