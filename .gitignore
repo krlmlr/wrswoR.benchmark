@@ -9,3 +9,4 @@
 /inst/web/
 inst/doc
 /man
+/vignettes/*_cache
