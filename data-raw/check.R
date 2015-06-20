@@ -1,0 +1,43 @@
+set.seed(20150619L)
+
+PROB <- list(uniform = function(n) rep(1, n),
+             linear = seq_len,
+             linear_double = . %>% seq_len %>% multiply_by(2) %>% add(-1),
+             linear_half = . %>% seq_len %>% multiply_by(0.5) %>% add(0.5),
+             exp = . %>% seq_len %>% raise_to_power(2, .),
+             rexp = . %>% seq_len %>% raise_to_power(0.5, .)
+            )
+k <- 1000
+
+.check <- function() {
+  plyr::ldply(
+    PROB,
+    function(probf) {
+      plyr::ldply(
+        N,
+        function(n) {
+          prob <- probf(n)
+          plyr::ldply(
+            R,
+            function(r) {
+              s <- trunc(n * r)
+              plyr::ldply(
+                setNames(nm = seq_len(k)),
+                function(i) {
+                  data.frame(
+                    j=seq_len(s),
+                    ccrank=sample.int.crank(n, s, prob),
+                    crank=sample.int.crank(n, s, prob),
+                    rank=sample.int.rank(n, s, prob),
+                    rej=sample.int.rej(n, s, prob),
+                    R=sample.int.R(n, s, prob)
+                  )
+                }) %>%
+                dplyr::rename(i = .id)
+            }) %>%
+            dplyr::mutate(r = as.numeric(.id), .id = NULL)
+        }) %>%
+        dplyr::mutate(n = as.integer(.id), .id = NULL)
+    }) %>%
+    dplyr::rename(prob = .id)
+}
