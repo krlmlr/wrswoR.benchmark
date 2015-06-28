@@ -254,10 +254,10 @@ Box plots:
 
 ```{r fig.width=7, fig.height=5}
 correctness %>%
-  gather(algo, item, ccrank, crank, rank, rej, R) %>%
+  gather(algo, item, ccrank, crank, rank, rej, R, R2) %>%
   ggplot(aes(x=factor(item),y=j,color=algo)) +
   geom_boxplot() +
-  facet_wrap(~prob)
+  facet_grid(r~prob)
 ```
 
 
@@ -292,6 +292,6 @@ correctness %>%
   ungroup %>%
   ggplot(aes(x=algo, y=rel_error_sq)) +
   geom_bar(stat="identity") +
-  facet_grid(prob~n)
+  facet_grid(prob~r, scales = "free_y")
 ```
 
