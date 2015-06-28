@@ -6,8 +6,8 @@ devtools::load_all(pkg)
 source(file.path(pkg$path, "data-raw", "check.R"))
 
 
-N <- 5:10 %>% setNames(nm = .)
-R <- c(0.2, 0.4, 0.6, 1) %>% setNames(nm = .)
+N <- 10 %>% setNames(nm = .)
+R <- c(0.1, 0.2) %>% setNames(nm = .)
 
 correctness <- .check()
 
