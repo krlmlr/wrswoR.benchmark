@@ -26,12 +26,12 @@ k <- 1000
                 function(i) {
                   data.frame(
                     j=seq_len(s),
-                    R=sample.int.R(n, s, prob),
-                    ccrank=sample.int.crank(n, s, prob),
-                    crank=sample.int.crank(n, s, prob),
-                    rank=sample.int.rank(n, s, prob),
-                    rej=sample.int.rej(n, s, prob),
-                    R2=sample.int.R(n, s, prob)
+                    R=sample_int_R(n, s, prob),
+                    ccrank=sample_int_crank(n, s, prob),
+                    crank=sample_int_crank(n, s, prob),
+                    rank=sample_int_rank(n, s, prob),
+                    rej=sample_int_rej(n, s, prob),
+                    R2=sample_int_R(n, s, prob)
                   )
                 }) %>%
                 dplyr::rename(i = .id)
