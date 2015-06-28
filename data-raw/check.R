@@ -34,7 +34,7 @@ k <- 1000
                     R2=sample_int_R(n, s, prob)
                   )
                 }) %>%
-                dplyr::rename(i = .id)
+                dplyr::mutate(i = as.integer(.id), .id = NULL)
             }) %>%
             dplyr::mutate(r = as.numeric(.id), .id = NULL)
         }) %>%
