@@ -7,7 +7,7 @@ source(file.path(pkg$path, "data-raw", "check.R"))
 
 
 N <- 5 %>% setNames(nm = .)
-R <- c(0.1, 0.2, 1) %>% setNames(nm = .)
+R <- c(0.2, 0.4, 1) %>% setNames(nm = .)
 
 correctness <- .check()
 
