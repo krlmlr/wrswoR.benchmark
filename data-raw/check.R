@@ -7,7 +7,7 @@ PROB <- list(uniform = function(n) rep(1, n),
              exp = . %>% seq_len %>% raise_to_power(2, .),
              rexp = . %>% seq_len %>% raise_to_power(0.5, .)
             )
-k <- 1000
+k <- 10000
 
 .check <- function() {
   plyr::ldply(
