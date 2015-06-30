@@ -1,6 +1,7 @@
 library(magrittr)
 library(wrswoR)
 
+pkg <- devtools::as.package(".")
 source(file.path(pkg$path, "data-raw", "benchmark.R"))
 
 
