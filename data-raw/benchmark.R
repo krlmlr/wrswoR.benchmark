@@ -19,11 +19,11 @@ PROB <- list(uniform = function(n) rep(1, n),
             function(r) {
               s <- trunc(n * r)
               microbenchmark::microbenchmark(
-                ccrank=sample.int.crank(n, s, prob),
-                crank=sample.int.crank(n, s, prob),
-                rank=sample.int.rank(n, s, prob),
-                rej=sample.int.rej(n, s, prob),
-                R=sample.int.R(n, s, prob),
+                ccrank=sample_int_crank(n, s, prob),
+                crank=sample_int_crank(n, s, prob),
+                rank=sample_int_rank(n, s, prob),
+                rej=sample_int_rej(n, s, prob),
+                R=sample_int_R(n, s, prob),
                 control = list(order = "block", warmup = 10)
               )
             }) %>%
