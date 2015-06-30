@@ -1,8 +1,6 @@
 library(magrittr)
 library(wrswoR)
 
-pkg <- devtools::as.package(".")
-devtools::load_all(pkg)
 source(file.path(pkg$path, "data-raw", "check.R"))
 
 
