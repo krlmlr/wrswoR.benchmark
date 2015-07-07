@@ -7,7 +7,7 @@ PROB <- list(uniform = function(n) rep(1, n),
              exp = . %>% seq_len %>% raise_to_power(2, .),
              rexp = . %>% seq_len %>% raise_to_power(0.5, .)
             )
-k <- 1000
+k <- 10000
 
 .check <- function() {
   plyr::ldply(
@@ -31,10 +31,11 @@ k <- 1000
                     crank=sample_int_crank(n, s, prob),
                     rank=sample_int_rank(n, s, prob),
                     rej=sample_int_rej(n, s, prob),
-                    R2=sample_int_R(n, s, prob)
+                    expj=sample_int_expj(n, s, prob),
+                    expjs=sample_int_expjs(n, s, prob)
                   )
                 }) %>%
-                dplyr::rename(i = .id)
+                dplyr::mutate(i = as.integer(.id), .id = NULL)
             }) %>%
             dplyr::mutate(r = as.numeric(.id), .id = NULL)
         }) %>%
