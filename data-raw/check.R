@@ -32,7 +32,7 @@ k <- 10000
                     rank=sample_int_rank(n, s, prob),
                     rej=sample_int_rej(n, s, prob),
                     expj=sample_int_expj(n, s, prob),
-                    expjs=sample_int_expj(n, s, prob)
+                    expjs=sample_int_expjs(n, s, prob)
                   )
                 }) %>%
                 dplyr::mutate(i = as.integer(.id), .id = NULL)
