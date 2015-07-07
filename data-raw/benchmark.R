@@ -23,6 +23,8 @@ PROB <- list(uniform = function(n) rep(1, n),
                 crank=sample_int_crank(n, s, prob),
                 rank=sample_int_rank(n, s, prob),
                 rej=sample_int_rej(n, s, prob),
+                expj=sample_int_expj(n, s, prob),
+                expjs=sample_int_expjs(n, s, prob),
                 R=sample_int_R(n, s, prob),
                 control = list(order = "block", warmup = 10)
               )
