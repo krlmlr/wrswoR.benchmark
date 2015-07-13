@@ -1,7 +1,28 @@
-#' Detailed run times for analysis of break-even point
+#' @details \code{break_even} contains detailed run times for the analysis of
+#' break-even points between the various implementations.
 #'
-#' Run times measured on an Intel(R) Xeon(R) CPU E5-2643 clocked at 3.30 GHz
-#' with 10 MB cache, running Debian Squeeze, R 3.1.3 and gcc 4.4.5-8.
+#' @format A data frame with 5 columns:
+#'
+#' \describe{
+#'   \item{\code{prob}}{
+#'     A description of the probability distribution used.
+#'     See \code{data_raw/benchmark.R} for details.
+#'   }
+#'   \item{\code{expr}}{
+#'     Function name without the \code{sample_int_} prefix.
+#'   }
+#'   \item{\code{time}}{
+#'     Run time in nanoseconds, as measured by
+#'     \code{\link[microbenchmark]{microbenchmark}}
+#'   }
+#'   \item{\code{r}}{
+#'     Ratio between the \code{size} and \code{n} arguments.
+#'   }
+#'   \item{\code{n}}{
+#'     The \code{n} argument.
+#'   }
+#' }
 #'
 #' @docType data
+#' @rdname timings
 "break_even"
