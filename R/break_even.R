@@ -25,4 +25,5 @@
 #'
 #' @docType data
 #' @rdname timings
+#' @include timings.R
 "break_even"

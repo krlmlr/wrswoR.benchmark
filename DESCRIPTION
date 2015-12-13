@@ -22,3 +22,7 @@ Suggests:
 VignetteBuilder: knitr
 LazyData: true
 RoxygenNote: 5.0.1.9000
+Collate:
+    'timings.R'
+    'break_even.R'
+    'correctness.R'
