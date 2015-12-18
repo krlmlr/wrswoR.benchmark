@@ -5,3 +5,8 @@
 #' @name p_values_agg
 #' @export
 NULL
+
+#' @name p_values_agg_agg
+#' @rdname p_values_agg
+#' @export
+NULL
