@@ -3,4 +3,5 @@
 export(break_even)
 export(correctness)
 export(p_values_7)
+export(p_values_agg)
 export(timings)

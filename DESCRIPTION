@@ -28,5 +28,6 @@ Collate:
     'break_even.R'
     'correctness.R'
     'p_values_7.R'
+    'p_values_agg.R'
 Imports:
     rextdata
