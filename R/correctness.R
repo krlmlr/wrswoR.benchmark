@@ -2,5 +2,6 @@
 #'
 #' Results of repeated calls of the various sampling functions.
 #'
-#' @docType data
-"correctness"
+#' @name correctness
+#' @export
+NULL

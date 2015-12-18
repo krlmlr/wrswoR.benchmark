@@ -23,7 +23,8 @@
 #'   }
 #' }
 #'
-#' @docType data
 #' @rdname timings
 #' @include timings.R
-"break_even"
+#' @name break_even
+#' @export
+NULL

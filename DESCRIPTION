@@ -23,6 +23,9 @@ VignetteBuilder: knitr
 LazyData: true
 RoxygenNote: 5.0.1.9000
 Collate:
+    'aaa-rextdata.R'
     'timings.R'
     'break_even.R'
     'correctness.R'
+Imports:
+    rextdata
