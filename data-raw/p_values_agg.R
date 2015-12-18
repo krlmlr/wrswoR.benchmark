@@ -32,14 +32,22 @@ p_values_unskewed <-
 
 r_N_df <- expand.grid(n = r_df$n, N = unique(p_values_unskewed$N))
 
-meta_p_values <- p_values_unskewed %>%
+p_values_agg <- p_values_unskewed %>%
   group_by(n, N, func, skew) %>%
   do({
     p_value <- metap::sumlog(.$p_value)$p
     data_frame(p_value = p_value)
   })
 
-rextdata::use_extdata(p_values_agg, compress = "xz", overwrite = TRUE)
+p_values_agg_agg <- p_values_unskewed %>%
+  group_by(N, func, skew) %>%
+  do({
+    p_value <- metap::sumlog(.$p_value)$p
+    data_frame(p_value = p_value)
+  })
+
+rextdata::use_extdata(p_values_agg, p_values_agg_agg, compress = "xz",
+                      overwrite = TRUE)
 
 # meta_growing_n %>%
 #   filter(skew == 1 & func != "R") %>%
