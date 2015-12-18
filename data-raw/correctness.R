@@ -10,4 +10,4 @@ R <- c(0.2, 0.4, 1) %>% setNames(nm = .)
 
 correctness <- .check()
 
-devtools::use_data(correctness, overwrite = TRUE, compress = "xz")
+rextdata::use_extdata(correctness, overwrite = TRUE, compress = "xz")
