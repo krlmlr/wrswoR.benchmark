@@ -5,7 +5,7 @@ pkg <- devtools::as.package(".")
 source(file.path(pkg$path, "data-raw", "benchmark.R"))
 
 
-N <- trunc(10 ** seq(1.5, 6, by = 0.5)) %>% setNames(nm = .)
+N <- trunc(10 ** seq(1.5, 5.5, by = 0.5)) %>% setNames(nm = .)
 
 timings <- .benchmark()
 
