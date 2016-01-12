@@ -15,7 +15,7 @@ MIX <- setNames(nm = c("asc", "desc", "shuffle"))
             PROB,
             function(prob_name) {
               MY_MIX <- MIX
-              if (prob_name == "uniform") MIX <- MIX[1L]
+              if (prob_name == "uniform") MY_MIX <- MIX[1L]
               plyr::ldply(
                 MY_MIX,
                 function(mix_name) {
