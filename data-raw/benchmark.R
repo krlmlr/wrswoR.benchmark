@@ -19,7 +19,8 @@ MIX <- setNames(nm = c("asc", "desc", "shuffle"))
               plyr::ldply(
                 MY_MIX,
                 function(mix_name) {
-                  alpha <- 10 ** (300 / n)
+                  alpha <- 1.0007
+                  #alpha <- 10 ** (300 / n)
                   prob <- wrswoR.sample::mix()[[mix_name]](wrswoR.sample::prob(alpha)[[prob_name]](n))
                   s <- as.integer(ceiling(n * r))
                   experiments <- list(
