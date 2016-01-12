@@ -18,6 +18,7 @@ PROB <- list(uniform = function(n) rep(1, n),
             R,
             function(r) {
               s <- as.integer(ceiling(n * r))
+              print(list(n=n, s=s, prob=prob))
               microbenchmark::microbenchmark(
                 ccrank=sample_int_crank(n, s, prob),
                 crank=sample_int_crank(n, s, prob),
