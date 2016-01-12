@@ -17,7 +17,7 @@ PROB <- list(uniform = function(n) rep(1, n),
           plyr::ldply(
             R,
             function(r) {
-              s <- trunc(n * r)
+              s <- as.integer(ceiling(n * r))
               microbenchmark::microbenchmark(
                 ccrank=sample_int_crank(n, s, prob),
                 crank=sample_int_crank(n, s, prob),
