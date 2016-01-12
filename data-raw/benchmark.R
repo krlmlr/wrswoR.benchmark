@@ -18,7 +18,7 @@ PROB <- list(uniform = function(n) rep(1, n),
             R,
             function(r) {
               s <- as.integer(ceiling(n * r))
-              print(list(n=n, s=s, prob=summary(prob)))
+              print(list(time=Sys.time(), n=n, s=s, prob=summary(prob)))
               experiments <- list(
                 ccrank=quote(sample_int_crank(n, s, prob)),
                 crank=quote(sample_int_crank(n, s, prob)),
