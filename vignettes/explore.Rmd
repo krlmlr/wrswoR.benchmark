@@ -11,10 +11,11 @@ vignette: >
 
 
 ```{r}
-library(wrswoR)
+library(wrswoR.benchmark)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
+knitr::opts_chunk$set(cache = TRUE)
 ```
 
 # Run time tests
@@ -158,14 +159,15 @@ compare different ratios:
 
 ```{r fig.width=7, fig.height=5}
 break_even %>%
-  filter(prob == "uniform") %>%
-  filter(n >= 100) %>%
-  group_by(n, expr, r) %>%
+  filter(prob == c("uniform", "linear")) %>%
+  filter(n <= 1000) %>%
+  filter(expr %in% c("expj", "expjs", "R")) %>%
+  group_by(n, expr, r, prob) %>%
   summarize(mean = mean(time)) %>%
   ungroup %>%
   gather(metric, time, mean) %>%
   mutate(percent_r = scales::percent(r)) %>%
-  ggplot(aes(x=n, y=time * 1e-9, color=expr)) +
+  ggplot(aes(x=n, y=time * 1e-9, color=expr, linetype=prob)) +
   facet_wrap(~percent_r, ncol = 1) +
   geom_line() +
   scale_x_log10() +
@@ -243,7 +245,3 @@ timings %>%
   scale_x_log10() +
   geom_line()
 ```
-
-
-
-# Comparison of results
