@@ -26,7 +26,7 @@ PROB <- list(uniform = function(n) rep(1, n),
                 rej=quote(sample_int_rej(n, s, prob)),
                 expj=quote(sample_int_expj(n, s, prob)),
                 expjs=quote(sample_int_expjs(n, s, prob)),
-                R=quote(sample_int_R(n, s, prob)),
+                R=quote(sample_int_R(n, s, prob))
               )
               if (n * s >= 0.999e9) {
                 experiments[["R"]] <- NULL
