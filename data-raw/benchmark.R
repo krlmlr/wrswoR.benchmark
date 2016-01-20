@@ -1,6 +1,5 @@
 set.seed(20150619L)
 
-R <- c(0.01, 0.1, 1) %>% setNames(nm = .)
 PROB <- setNames(nm = c("uniform", "linear", "exp"))
 MIX <- setNames(nm = c("asc", "desc", "shuffle"))
 
