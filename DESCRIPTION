@@ -20,7 +20,6 @@ Suggests:
     ggplot2,
     dplyr,
     tidyr
-VignetteBuilder: knitr
 LazyData: true
 RoxygenNote: 5.0.1.9000
 Collate:
