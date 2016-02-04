@@ -7,7 +7,7 @@ Version: 0.0-2
 Authors@R: as.person("Kirill Müller <krlmlr+r@mailbox.org> [aut, cre]")
 Description: Includes performance measurements and results of repeated
     experiment runs (for correctness checks) for code in the
-    "wrswoR" package.
+    'wrswoR' package.
 License: GPL-3
 URL: https://github.com/krlmlr/wrswoR.benchmark
 BugReports: https://github.com/krlmlr/wrswoR.benchmark/issues
