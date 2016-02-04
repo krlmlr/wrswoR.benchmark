@@ -11,4 +11,6 @@
 #'
 #' @name timings
 #' @export
+#' @examples
+#' head(timings)
 NULL

@@ -27,4 +27,6 @@
 #' @include timings.R
 #' @name break_even
 #' @export
+#' @examples
+#' head(break_even)
 NULL
