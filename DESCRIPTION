@@ -24,7 +24,7 @@ Suggests:
     dplyr,
     tidyr
 LazyData: true
-RoxygenNote: 5.0.1.9000
+RoxygenNote: 5.0.1
 Collate:
     'aaa-rextdata.R'
     'timings.R'
@@ -32,4 +32,3 @@ Collate:
     'correctness.R'
     'p_values_7.R'
     'p_values_agg.R'
-    'zzz-autoroxy.R'

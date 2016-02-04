@@ -9,7 +9,6 @@
 /inst/web/
 inst/doc
 /vignettes/*_cache
-/man
 _builds
 _projects
 _steps
