@@ -7,3 +7,6 @@
 ^Makefile\.in$
 ^wercker\.yml$
 ^\.lintr$
+^_builds$
+^_projects$
+^_steps$
