@@ -1,3 +1,12 @@
+Version 0.0-3 (2016-02-04)
+===
+
+- New simulation runs with wider ranges and using `ceiling()` to compute `size` from `r`.
+- Removed outdated vignette.
+- Use wercker.
+- Fix winbuilder errors
+
+
 0.0-2 (2016-01-12)
 ==================
 
