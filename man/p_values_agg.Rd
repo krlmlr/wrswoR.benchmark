@@ -7,4 +7,8 @@
 \description{
 Created by \code{data_raw/p_values_agg.R}.
 }
+\examples{
+head(p_values_agg)
+head(p_values_agg_agg)
+}
 

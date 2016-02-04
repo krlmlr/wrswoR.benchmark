@@ -26,8 +26,9 @@
   }
 }}
 \description{
-Run times measured on an Intel(R) Xeon(R) CPU E5-2643 clocked at 3.30 GHz
-with 10 MB cache, running Debian Squeeze, R 3.1.3 and gcc 4.4.5-8.
+Run times measured on an Intel(R) Xeon(R) CPU X5680 clocked at 3.33 GHz
+with 12 MB cache, running RedHat Enterprise Linux, R 3.2.3 and gcc 4.8.5,
+using version 0.4 of the \code{wrswoR} package.
 The data are created by the corresponding scripts in the \code{data_raw}
 directory.
 }
@@ -37,5 +38,9 @@ directory.
 
 \code{break_even} contains detailed run times for the analysis of
 break-even points between the various implementations.
+}
+\examples{
+head(timings)
+head(break_even)
 }
 
