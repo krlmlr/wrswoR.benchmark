@@ -29,7 +29,7 @@ function (..., assign.env = parent.frame())
 extdata_path <-
 function (package.env) 
 {
-    system.file(extdata_name(), package = packageName(package.env))[[1L]]
+    system.file(extdata_name(), package = utils::packageName(package.env))[[1L]]
 }
 
 extdata_name <-
