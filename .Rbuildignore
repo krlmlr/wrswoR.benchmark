@@ -10,3 +10,4 @@
 ^_builds$
 ^_projects$
 ^_steps$
+^cran-comments\.md$

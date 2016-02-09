@@ -4,7 +4,7 @@
 \alias{p_values_7}
 \title{P-values for n = 7}
 \description{
-TBD.
+Created by \code{data_raw/p_values_7.R}.
 }
 \examples{
 head(p_values_7)
