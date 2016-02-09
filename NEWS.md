@@ -1,3 +1,9 @@
+Version 0.0-4 (2016-02-09)
+===
+
+- Prepare CRAN release.
+
+
 Version 0.0-3 (2016-02-04)
 ===
 
