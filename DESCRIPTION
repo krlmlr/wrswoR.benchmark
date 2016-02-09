@@ -30,7 +30,6 @@ Collate:
     'aaa-rextdata.R'
     'timings.R'
     'break_even.R'
-    'correctness.R'
     'p_values_7.R'
     'p_values_agg.R'
     'zzz-autoroxy.R'
