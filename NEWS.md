@@ -1,3 +1,11 @@
+Version 0.1 (2016-02-09)
+===
+
+First CRAN release.
+
+- Datasets: `break_even`, `timings`, `p_values_7`, `p_values_agg`, `p_values_agg_agg`.
+
+
 Version 0.0-4 (2016-02-09)
 ===
 
