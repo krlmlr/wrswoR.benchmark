@@ -18,7 +18,6 @@ Depends:
 Imports:
     lazyeval
 Suggests:
-    wrswoR,
     knitr,
     rmarkdown,
     ggplot2,
