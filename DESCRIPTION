@@ -3,7 +3,7 @@ Package: wrswoR.benchmark
 Type: Package
 Title: Benchmark and Correctness Data for Weighted Random Sampling
     Without Replacement
-Version: 0.0-4
+Version: 0.1
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email =
         "krlmlr+r@mailbox.org")
 Description: Includes performance measurements and results of repeated
@@ -18,7 +18,6 @@ Depends:
 Imports:
     lazyeval
 Suggests:
-    wrswoR,
     knitr,
     rmarkdown,
     ggplot2,
@@ -32,4 +31,3 @@ Collate:
     'break_even.R'
     'p_values_7.R'
     'p_values_agg.R'
-    'zzz-autoroxy.R'
