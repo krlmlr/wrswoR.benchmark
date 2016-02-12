@@ -1,3 +1,6 @@
+PACKAGE_NAME <- methods::getPackageName()
+PACKAGE_VERSION <- packageDescription(PACKAGE_NAME, fields = "Version")
+
 auto_extdata <-
   function (assign.env = parent.frame())
   {
@@ -67,7 +70,8 @@ delayed_assign_one <-
 
 read_rds(
   file.path(
-    "https://raw.githubusercontent.com/krlmlr/wrswoR.benchmark/master/inst/extdata",
+    paste0("https://raw.githubusercontent.com/krlmlr/", PACKAGE_NAME, "/v",
+           PACKAGE_VERSION, "/inst/extdata"),
     c("break_even.rds", "p_values_7.rds", "p_values_agg_agg.rds",
       "p_values_agg.rds", "timings.rds")
   )
