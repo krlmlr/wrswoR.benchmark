@@ -1,3 +1,4 @@
+PACKAGE_NAME <- methods::getPackageName()
 PACKAGE_VERSION <- "0.1"
 
 auto_extdata <-
