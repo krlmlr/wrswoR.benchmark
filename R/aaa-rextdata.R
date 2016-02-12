@@ -23,8 +23,7 @@ read_rds <-
       lazyeval::lazy_(bquote({
         f <- tempfile("rextdata", fileext = ".rds")
         on.exit(unlink(f))
-        utils::download.file(.(dot), f, method = "wget", quiet = TRUE,
-                             mode = "wb")
+        curl::curl_download(.(dot), f)
         readRDS(f)
       }), baseenv())
     })
