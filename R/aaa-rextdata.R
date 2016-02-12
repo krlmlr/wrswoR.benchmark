@@ -20,8 +20,13 @@ read_rds <-
     }
     names(dots)[unnamed] <- name_from_rds(dots[unnamed])
     dots_expr <- lapply(dots, function(dot) {
-      dot <- normalizePath(dot)
-      bquote(readRDS(.(dot)))
+      lazyeval::lazy_(bquote({
+        f <- tempfile("rextdata", fileext = ".rds")
+        on.exit(unlink(f))
+        utils::download.file(.(dot), f, method = "wget", quiet = TRUE,
+                             mode = "wb")
+        readRDS(f)
+      }), baseenv())
     })
     delayed_assign_(.dots = dots_expr, assign.env = assign.env)
   }
@@ -61,4 +66,10 @@ delayed_assign_one <-
     invisible(name)
   }
 
-auto_extdata()
+read_rds(
+  file.path(
+    "https://raw.githubusercontent.com/krlmlr/wrswoR.benchmark/master/inst/extdata",
+    c("break_even.rds", "p_values_7.rds", "p_values_agg_agg.rds",
+      "p_values_agg.rds", "timings.rds")
+  )
+)
