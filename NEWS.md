@@ -1,3 +1,9 @@
+Version 0.1-1 (2016-02-12)
+===
+
+- Download data from GitHub, once per session.
+
+
 Version 0.1 (2016-02-09)
 ===
 

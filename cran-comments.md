@@ -4,12 +4,9 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 3 notes
+0 errors | 0 warnings | 1 note
 
 * This is a new release.
-* This is a data-only package, the data are loaded in the examples.
-* This package is required for building the vignette in the "wrswoR" package,
-  which I'd like to submit after this package has been accepted
 
 ## Reverse dependencies
 
