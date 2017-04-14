@@ -1,5 +1,8 @@
 set.seed(20150619L)
 
+PROB <- setNames(nm = c("uniform", "linear", "exp"))
+MIX <- setNames(nm = c("asc", "desc", "shuffle"))
+
 .benchmark_sort <- function() {
   plyr::ldply(
     N,
