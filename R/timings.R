@@ -14,3 +14,11 @@
 #' @examples
 #' head(timings)
 NULL
+
+#' @rdname timings
+#'
+#' @details \code{timings_sort} contains run times for sorting probabilities
+#'   with the given distributions.
+#'
+#' @export
+"timings_sort"
