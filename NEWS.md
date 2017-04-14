@@ -1,3 +1,9 @@
+Version 0.1-3 (2017-04-14)
+===
+
+- Time sorting in decreasing order.
+
+
 Version 0.1-2 (2017-04-14)
 ===
 

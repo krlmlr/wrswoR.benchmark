@@ -1,5 +1,5 @@
 PACKAGE_NAME <- methods::getPackageName()
-PACKAGE_VERSION <- "0.1"
+PACKAGE_VERSION <- "0.1-3"
 
 auto_extdata <-
   function (assign.env = parent.frame())

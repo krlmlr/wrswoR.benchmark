@@ -19,9 +19,9 @@ MIX <- setNames(nm = c("asc", "desc", "shuffle"))
               #alpha <- 10 ** (300 / n)
               prob <- wrswoR.sample::mix()[[mix_name]](wrswoR.sample::prob(alpha)[[prob_name]](n))
               experiments <- list(
-                sort_shell = quote(sort.int(prob, method = "shell")),
-                sort_quick = quote(sort.int(prob, method = "quick")),
-                sort_radix = quote(sort.int(prob, method = "radix"))
+                sort_shell = quote(sort.int(prob, method = "shell", decreasing = TRUE)),
+                sort_quick = quote(sort.int(prob, method = "quick", decreasing = TRUE)),
+                sort_radix = quote(sort.int(prob, method = "radix", decreasing = TRUE))
               )
               print(list(time=Sys.time(), n=n, prob=prob_name, mix=mix_name, experiments=names(experiments)))
               microbenchmark::microbenchmark(
