@@ -34,6 +34,9 @@ MIX <- setNames(nm = c("asc", "desc", "shuffle"))
                   if (n * s >= 0.999e9) {
                     experiments[["R"]] <- NULL
                   }
+                  if (n * s >= 0.999e10) {
+                    experiments[["rej"]] <- NULL
+                  }
                   print(list(time=Sys.time(), n=n, s=s, prob=prob_name, mix=mix_name, experiments=names(experiments)))
                   microbenchmark::microbenchmark(
                     list = experiments,
