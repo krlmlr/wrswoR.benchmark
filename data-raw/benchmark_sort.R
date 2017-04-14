@@ -1,6 +1,6 @@
 set.seed(20150619L)
 
-.benchmark <- function() {
+.benchmark_sort <- function() {
   plyr::ldply(
     N,
     function(n) {
