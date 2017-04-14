@@ -1,7 +1,7 @@
-Version 0.1-1 (2016-02-12)
+Version 0.1-2 (2017-04-14)
 ===
 
-- Download data from GitHub, once per session.
+- New `timing_sort` dataset.
 
 
 Version 0.1 (2016-02-09)
