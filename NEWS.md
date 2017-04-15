@@ -1,3 +1,9 @@
+Version 0.1-4 (2017-04-15)
+===
+
+- Results for up to n = 10⁷.
+
+
 Version 0.1-3 (2017-04-14)
 ===
 
