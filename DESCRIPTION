@@ -20,4 +20,4 @@ Suggests: knitr, rmarkdown, ggplot2, dplyr, tidyr
 LazyData: true
 RoxygenNote: 6.0.1
 Collate: 'aaa-rextdata.R' 'timings.R' 'break_even.R' 'p_values_7.R'
-        'p_values_agg.R' 'zzz-autoroxy.R'
+        'p_values_agg.R'
