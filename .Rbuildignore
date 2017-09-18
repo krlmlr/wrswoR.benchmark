@@ -12,3 +12,5 @@
 ^_steps$
 ^cran-comments\.md$
 ^inst/extdata$
+^appveyor\.yml$
+^tic\.R$
