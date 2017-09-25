@@ -4,7 +4,7 @@ Type: Package
 Title: Benchmark and Correctness Data for Weighted Random Sampling
         Without Replacement
 Version: 0.2
-Date: 2017-08-21
+Date: 2017-09-25
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email =
         "krlmlr+r@mailbox.org")
 Description: Includes performance measurements and results of repeated
