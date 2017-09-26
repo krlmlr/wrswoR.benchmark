@@ -1,18 +1,6 @@
-Version 0.1-4 (2017-04-15)
-===
+# wrswoR.benchmark 0.2 (2017-08-21)
 
 - Results for up to n = 10⁷.
-
-
-Version 0.1-3 (2017-04-14)
-===
-
-- Time sorting in decreasing order.
-
-
-Version 0.1-2 (2017-04-14)
-===
-
 - New `timing_sort` dataset.
 
 

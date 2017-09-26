@@ -3,7 +3,8 @@ Package: wrswoR.benchmark
 Type: Package
 Title: Benchmark and Correctness Data for Weighted Random Sampling
         Without Replacement
-Version: 0.1-4
+Version: 0.2
+Date: 2017-09-25
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email =
         "krlmlr+r@mailbox.org")
 Description: Includes performance measurements and results of repeated
@@ -19,4 +20,4 @@ Suggests: knitr, rmarkdown, ggplot2, dplyr, tidyr
 LazyData: true
 RoxygenNote: 6.0.1
 Collate: 'aaa-rextdata.R' 'timings.R' 'break_even.R' 'p_values_7.R'
-        'p_values_agg.R' 'zzz-autoroxy.R'
+        'p_values_agg.R'

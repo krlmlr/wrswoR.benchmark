@@ -6,7 +6,7 @@
 \alias{timings_sort}
 \alias{break_even}
 \title{Run time data}
-\format{An object of class \code{data.frame} with 21000 rows and 5 columns.}
+\format{An object of class \code{data.frame} with 25200 rows and 5 columns.}
 \usage{
 timings_sort
 }
