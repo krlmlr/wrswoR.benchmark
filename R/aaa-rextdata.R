@@ -26,8 +26,15 @@ read_rds <-
       lazyeval::lazy_(bquote({
         f <- tempfile("rextdata", fileext = ".rds")
         on.exit(unlink(f))
-        curl::curl_download(.(dot), f)
-        readRDS(f)
+        tryCatch(
+          {
+            curl::curl_download(.(dot), f)
+            readRDS(f)
+          },
+          error = function(e) {
+            data.frame()
+          }
+        )
       }), baseenv())
     })
     delayed_assign_(.dots = dots_expr, assign.env = assign.env)
