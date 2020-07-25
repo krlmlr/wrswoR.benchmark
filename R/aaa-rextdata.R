@@ -26,12 +26,14 @@ read_rds <-
       lazyeval::lazy_(bquote({
         f <- tempfile("rextdata", fileext = ".rds")
         on.exit(unlink(f))
+        path <- .(dot)
         tryCatch(
           {
-            curl::curl_download(.(dot), f)
+            curl::curl_download(path, f)
             readRDS(f)
           },
           error = function(e) {
+            message("Could not download ", path)
             data.frame()
           }
         )
