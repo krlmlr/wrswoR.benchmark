@@ -1,11 +1,17 @@
-## Test environments
-* local Ubuntu install, R 3.4.1
-* win-builder (devel and release)
+wrswoR.benchmark 0.2.1
+
+## Cran Repository Policy
+
+- [x] Reviewed CRP last edited 2020-07-11.
 
 ## R CMD check results
 
-0 errors | 0 warnings | 0 notes
+- [x] Checked locally, R 4.0.2
+- [ ] Checked on CI system, R 4.0.2
+- [ ] Checked on win-builder, R devel
 
-## Reverse dependencies
+- [ ] Check the boxes above after successful execution and remove this line. Then run `fledge::release().
 
-Ran R CMD check on its sole reverse dependency, wrswoR, without errors, warnings, or notes.
+## Current CRAN check results
+
+- [x] Checked on 2020-07-25, no errors found.
