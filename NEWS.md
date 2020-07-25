@@ -1,3 +1,9 @@
+# wrswoR.benchmark 0.2.0.9000 (2020-07-25)
+
+- Return tibbles or data frames, depending on if the tibble package is available.
+- Gracefully fail if data download fails.
+
+
 # wrswoR.benchmark 0.2 (2017-08-21)
 
 - Results for up to n = 10⁷.
