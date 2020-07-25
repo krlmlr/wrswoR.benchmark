@@ -30,7 +30,12 @@ read_rds <-
         tryCatch(
           {
             curl::curl_download(path, f)
-            readRDS(f)
+            data <- readRDS(f)
+            if (requireNamespace("tibble", quietly = TRUE)) {
+              tibble::as_tibble(data)
+            } else {
+              as.data.frame(data)
+            }
           },
           error = function(e) {
             message("Could not download ", path)
