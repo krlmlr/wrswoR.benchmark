@@ -1,3 +1,8 @@
+# wrswoR.benchmark 0.2.1 (2020-07-25)
+
+- Internal changes only.
+
+
 # wrswoR.benchmark 0.2.0.9000 (2020-07-25)
 
 - Return tibbles or data frames, depending on if the tibble package is available.
