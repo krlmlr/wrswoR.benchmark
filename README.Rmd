@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+pkgload::load_all()
+```
+
+# wrswoR.benchmark
+
+<!-- badges: start -->
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![R build status](https://github.com/krlmlr/wrswoR.benchmark/workflows/rcc/badge.svg)](https://github.com/krlmlr/wrswoR.benchmark/actions)
+[![CRAN status](https://www.r-pkg.org/badges/version/wrswoR.benchmark)](https://CRAN.R-project.org/package=wrswoR.benchmark)
+<!-- badges: end -->
+
+The goal of wrswoR.benchmark is to provide benchmark data for [{wrswoR}](https://github.com/krlmlr/wrswoR), a package with different implementations of weighted random sampling without replacement.
+
+## Installation
+
+You can install the released version of wrswoR.benchmark from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("wrswoR.benchmark")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("krlmlr/wrswoR.benchmark")
+```
+## Example
+
+The package contains several datasets, this is one of them:
+
+```{r example}
+library(wrswoR.benchmark)
+timings
+```
