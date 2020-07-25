@@ -2,12 +2,12 @@
 #'
 #' Run times measured on an Intel(R) Xeon(R) CPU X5680 clocked at 3.33 GHz
 #' with 12 MB cache, running RedHat Enterprise Linux, R 3.2.3 and gcc 4.8.5,
-#' using version 0.4 of the \code{wrswoR} package.
-#' The data are created by the corresponding scripts in the \code{data_raw}
+#' using version 0.4 of the `wrswoR` package.
+#' The data are created by the corresponding scripts in the `data_raw`
 #' directory.
 #'
-#' @details \code{timings} contains run times for a larger range of values
-#'   for the \code{n} argument.
+#' @details `timings` contains run times for a larger range of values
+#'   for the `n` argument.
 #'
 #' @name timings
 #' @export
@@ -17,34 +17,34 @@ NULL
 
 #' @rdname timings
 #'
-#' @details \code{timings_sort} contains run times for sorting probabilities
+#' @details `timings_sort` contains run times for sorting probabilities
 #'   with the given distributions.
 #'
 #' @export
 "timings_sort"
 
-#' @details \code{break_even} contains detailed run times for the analysis of
+#' @details `break_even` contains detailed run times for the analysis of
 #' break-even points between the various implementations.
 #'
 #' @format A data frame with 5 columns:
 #'
 #' \describe{
-#'   \item{\code{prob}}{
+#'   \item{`prob`}{
 #'     A description of the probability distribution used.
-#'     See \code{data_raw/benchmark.R} for details.
+#'     See `data_raw/benchmark.R` for details.
 #'   }
-#'   \item{\code{expr}}{
-#'     Function name without the \code{sample_int_} prefix.
+#'   \item{`expr`}{
+#'     Function name without the `sample_int_` prefix.
 #'   }
-#'   \item{\code{time}}{
+#'   \item{`time`}{
 #'     Run time in nanoseconds, as measured by
-#'     \code{\link[microbenchmark]{microbenchmark}}
+#'     [microbenchmark::microbenchmark()]
 #'   }
-#'   \item{\code{r}}{
-#'     Ratio between the \code{size} and \code{n} arguments.
+#'   \item{`r`}{
+#'     Ratio between the `size` and `n` arguments.
 #'   }
-#'   \item{\code{n}}{
-#'     The \code{n} argument.
+#'   \item{`n`}{
+#'     The `n` argument.
 #'   }
 #' }
 #'

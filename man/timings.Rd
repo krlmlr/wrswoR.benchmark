@@ -12,23 +12,23 @@ An object of class \code{data.frame} with 25200 rows and 5 columns.
 A data frame with 5 columns:
 
 \describe{
-  \item{\code{prob}}{
-    A description of the probability distribution used.
-    See \code{data_raw/benchmark.R} for details.
-  }
-  \item{\code{expr}}{
-    Function name without the \code{sample_int_} prefix.
-  }
-  \item{\code{time}}{
-    Run time in nanoseconds, as measured by
-    \code{\link[microbenchmark]{microbenchmark}}
-  }
-  \item{\code{r}}{
-    Ratio between the \code{size} and \code{n} arguments.
-  }
-  \item{\code{n}}{
-    The \code{n} argument.
-  }
+\item{\code{prob}}{
+A description of the probability distribution used.
+See \code{data_raw/benchmark.R} for details.
+}
+\item{\code{expr}}{
+Function name without the \code{sample_int_} prefix.
+}
+\item{\code{time}}{
+Run time in nanoseconds, as measured by
+\code{\link[microbenchmark:microbenchmark]{microbenchmark::microbenchmark()}}
+}
+\item{\code{r}}{
+Ratio between the \code{size} and \code{n} arguments.
+}
+\item{\code{n}}{
+The \code{n} argument.
+}
 }
 }
 \usage{
@@ -43,10 +43,10 @@ directory.
 }
 \details{
 \code{timings} contains run times for a larger range of values
-  for the \code{n} argument.
+for the \code{n} argument.
 
 \code{timings_sort} contains run times for sorting probabilities
-  with the given distributions.
+with the given distributions.
 
 \code{break_even} contains detailed run times for the analysis of
 break-even points between the various implementations.
