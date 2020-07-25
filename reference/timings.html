@@ -12,8 +12,8 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 
@@ -76,7 +76,7 @@ directory." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">wrswoR.benchmark</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.1</span>
       </span>
     </div>
 
@@ -140,7 +140,7 @@ directory.</p>
 See <code>data_raw/benchmark.R</code> for details.</p></dd>
 <dt><code>expr</code></dt><dd><p>Function name without the <code>sample_int_</code> prefix.</p></dd>
 <dt><code>time</code></dt><dd><p>Run time in nanoseconds, as measured by
-<code>microbenchmark::microbenchmark()</code></p></dd>
+<code><a href='https://rdrr.io/pkg/microbenchmark/man/microbenchmark.html'>microbenchmark::microbenchmark()</a></code></p></dd>
 <dt><code>r</code></dt><dd><p>Ratio between the <code>size</code> and <code>n</code> arguments.</p></dd>
 <dt><code>n</code></dt><dd><p>The <code>n</code> argument.</p></dd>
 
@@ -184,7 +184,7 @@ break-even points between the various implementations.</p>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Kirill Müller.</p>
+  <p>Developed by <a href='http://krlmlr.info'>Kirill Müller</a>.</p>
 </div>
 
 <div class="pkgdown">
