@@ -16,3 +16,4 @@
 ^tic\.R$
 ^\.github$
 ^README\.Rmd$
+^_pkgdown\.yml$
