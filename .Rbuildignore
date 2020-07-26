@@ -17,3 +17,5 @@
 ^\.github$
 ^README\.Rmd$
 ^_pkgdown\.yml$
+^docs$
+^CRAN-RELEASE$
