@@ -58,9 +58,15 @@
 
 
 
+  
+
+  
+
   </head>
 
   <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -121,24 +127,24 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>p_values_agg</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 6 x 5</span><span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 6 x 5</span><span>
 #&gt;       n     N func   skew    p_value
-#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'>1</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1    0.006</span><span style='text-decoration: underline;'>92</span><span>   
-#&gt; </span><span style='color: #555555;'>2</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00 0.000</span><span style='text-decoration: underline;'>668</span><span>  
-#&gt; </span><span style='color: #555555;'>3</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00 0.101     
-#&gt; </span><span style='color: #555555;'>4</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.01 0.000</span><span style='text-decoration: underline;'>002</span><span>21
-#&gt; </span><span style='color: #555555;'>5</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.02 0.016</span><span style='text-decoration: underline;'>5</span><span>    
-#&gt; </span><span style='color: #555555;'>6</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.04 0.000</span><span style='text-decoration: underline;'>378</span><span>  </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>p_values_agg_agg</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 6 x 4</span><span>
+#&gt;   </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>      </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'>1</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1    0.006</span><span style='text-decoration: underline;'>92</span><span>   
+#&gt; </span><span style='color: #BCBCBC;'>2</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00 0.000</span><span style='text-decoration: underline;'>668</span><span>  
+#&gt; </span><span style='color: #BCBCBC;'>3</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00 0.101     
+#&gt; </span><span style='color: #BCBCBC;'>4</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.01 0.000</span><span style='text-decoration: underline;'>002</span><span>21
+#&gt; </span><span style='color: #BCBCBC;'>5</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.02 0.016</span><span style='text-decoration: underline;'>5</span><span>    
+#&gt; </span><span style='color: #BCBCBC;'>6</span><span>     2  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.04 0.000</span><span style='text-decoration: underline;'>378</span><span>  </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>p_values_agg_agg</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; </span><span style='color: #949494;'># A tibble: 6 x 4</span><span>
 #&gt;       N func   skew p_value
-#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'>1</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1          1
-#&gt; </span><span style='color: #555555;'>2</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00       1
-#&gt; </span><span style='color: #555555;'>3</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00       1
-#&gt; </span><span style='color: #555555;'>4</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.01       1
-#&gt; </span><span style='color: #555555;'>5</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.02       1
-#&gt; </span><span style='color: #555555;'>6</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.04       1</div></span></pre>
+#&gt;   </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'>1</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1          1
+#&gt; </span><span style='color: #BCBCBC;'>2</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00       1
+#&gt; </span><span style='color: #BCBCBC;'>3</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.00       1
+#&gt; </span><span style='color: #BCBCBC;'>4</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.01       1
+#&gt; </span><span style='color: #BCBCBC;'>5</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.02       1
+#&gt; </span><span style='color: #BCBCBC;'>6</span><span>  </span><span style='text-decoration: underline;'>1</span><span>024 R      1.04       1</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -150,11 +156,11 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by <a href='http://krlmlr.info'>Kirill Müller</a>.</p>
+  <p><p>Developed by <a href="http://krlmlr.info" class="external-link">Kirill Müller</a>.</p></p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000.</p>
+  <p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9000.</p></p>
 </div>
 
       </footer>
@@ -162,6 +168,8 @@
 
   
 
+
+  
 
   </body>
 </html>
