@@ -93,5 +93,6 @@ read_rds(
     ),
     c("break_even.rds", "p_values_7.rds", "p_values_agg_agg.rds",
       "p_values_agg.rds", "timings.rds", "timings_sort.rds")
-  )
+  ),
+  assign.env = asNamespace(PACKAGE_NAME)
 )
