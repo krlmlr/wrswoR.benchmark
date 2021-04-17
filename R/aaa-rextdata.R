@@ -2,7 +2,7 @@ PACKAGE_NAME <- methods::getPackageName()
 PACKAGE_VERSION <- "0.1-4"
 
 auto_extdata <-
-  function (assign.env = parent.frame())
+  function (assign.env)
   {
     extension_pattern <- "[.]rds$"
     files <- dir(extdata_path(assign.env), pattern = extension_pattern,
@@ -66,15 +66,16 @@ name_from_rds <-
   }
 
 delayed_assign_ <-
-  function (..., .dots, assign.env = parent.frame())
+  function (..., .dots, assign.env)
   {
     dots <- lazyeval::all_dots(.dots, ..., all_named = TRUE)
+
     ret <- mapply(delayed_assign_one, names(dots), dots, MoreArgs = list(assign.env = assign.env))
     invisible(ret)
   }
 
 delayed_assign_one <-
-  function (name, expr, assign.env = parent.frame())
+  function (name, expr, assign.env)
   {
     force(name)
     force(expr)
@@ -84,8 +85,12 @@ delayed_assign_one <-
 
 read_rds(
   file.path(
-    paste0("https://raw.githubusercontent.com/krlmlr/", PACKAGE_NAME, "/v",
-           PACKAGE_VERSION, "/inst/extdata"),
+    paste0(
+      "https://raw.githubusercontent.com/krlmlr/",
+      PACKAGE_NAME,
+      "/v", PACKAGE_VERSION,
+      "/inst/extdata"
+    ),
     c("break_even.rds", "p_values_7.rds", "p_values_agg_agg.rds",
       "p_values_agg.rds", "timings.rds", "timings_sort.rds")
   )
